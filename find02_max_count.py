@@ -5,4 +5,5 @@ def find_max_count(data):
         data: list of numbers
     returns: count of maximum numbers in the list
     """
-    return 0
+    max_num = max(data)
+    return data.count(max_num)

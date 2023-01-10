@@ -5,4 +5,5 @@ def find_max_odd(data):
         data: list of numbers
     returns: maximum odd number in the list
     """
-    return 0
+    odd_num = [n for n in data if n%2 != 0]
+    return max(odd_num) if odd_num else 0
